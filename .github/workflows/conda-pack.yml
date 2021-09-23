@@ -16,7 +16,6 @@ jobs:
         with:
           auto-activate-base: true
           activate-environment: true
-          conda-build-version: 3.18.11
           python-version: 3.8
           channels: anaconda,conda-forge
           channel-priority: flexible
