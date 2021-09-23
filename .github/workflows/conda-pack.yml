@@ -27,7 +27,7 @@ jobs:
         run: |
           conda install -c conda-forge conda-pack
           conda env create -f environment.yml
-          conda pack -n lcls-inj-tuning
+          conda pack -n lcls-inj-tuning --ignore-missing-files
       - uses: actions/upload-artifact@v2
         with:
           name: lcls-inj-tuning.tar.gz
