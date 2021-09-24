@@ -17,4 +17,4 @@ dependencies:
   - pip:
     - gpflow ==2.1.4
     - scipy ==1.5.4
-    - pystan ==3.2.-
+    - pystan ==3.2.0
