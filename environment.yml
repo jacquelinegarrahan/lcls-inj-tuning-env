@@ -12,9 +12,8 @@ dependencies:
   - dm-tree =0.1.5
   - tensorflow =2.4.0
   - tensorflow-probability =0.12.1
-#  - pystan
+  - pystan ==2.19.1
   - pip
   - pip:
     - gpflow ==2.1.4
     - scipy ==1.5.4
-    - pystan ==3.2.0
