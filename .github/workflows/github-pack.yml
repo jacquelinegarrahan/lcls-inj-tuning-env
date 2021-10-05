@@ -23,7 +23,7 @@ jobs:
         run: |
             set -x
             docker run -v $(pwd)/environment.yml:/tmp/environment.yml \
-            -e ENVIRONMENT_NAME=${{ env.ENVIRONMENT_NAME }} --name build-env  -t jgarrahan/conda-pack-centos6:v0.0 
+            -e ENVIRONMENT_NAME=${{ env.ENVIRONMENT_NAME }} --name build-env  -t jgarrahan/conda-pack-centos6:v0.0 /tmp/environment.yml
             docker cp build-env:/root/${{ env.ENVIRONMENT_NAME }}.tar.gz .
       - name: Upload
         uses: actions/upload-artifact@v2
