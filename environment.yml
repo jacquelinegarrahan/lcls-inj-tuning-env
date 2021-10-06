@@ -11,11 +11,11 @@ dependencies:
   - conda-forge::pytest =6.2.1
   - conda-forge::jedi =0.17.2
   - conda-forge::dm-tree =0.1.5
-  - default::tensorflow=2.4.0
-  - tensorflow-probability =0.12.1
+  - conda-forge::tensorflow-probability =0.12.1
   - conda-forge::pystan ==2.19.1.1
   - conda-forge::pyepics
   - conda-forge::pip
   - pip:
     - gpflow ==2.1.4
     - scipy ==1.5.4
+    - tensorflow ==2.4.0
