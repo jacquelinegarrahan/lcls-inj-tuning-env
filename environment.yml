@@ -14,8 +14,9 @@ dependencies:
   - tensorflow-probability =0.12.1
   - pystan =2.19.1.1
   - pyepics
-  - tensorflow =2.4.0
+#  - tensorflow =2.4.0
   - pip
   - pip:
     - gpflow ==2.1.4
     - scipy ==1.5.4
+    - tensorflow =2.4.0

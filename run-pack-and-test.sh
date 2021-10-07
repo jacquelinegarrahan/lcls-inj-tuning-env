@@ -8,8 +8,8 @@ conda pack -n $ENVIRONMENT_NAME --ignore-missing-files --output $HOME/$ENVIRONME
 
 cp $HOME/$ENVIRONMENT_NAME.tar.gz /tmp/$ENVIRONMENT_NAME.tar.gz
 mkdir /tmp/$ENVIRONMENT_NAME
-tar -xvf /tmp/$ENVIRONMENT_NAME.tar.gz -C $ENVIRONMENT_NAME
-souce /tmp/$ENVIRONMENT_NAME/bin/activate
+tar -xvf /tmp/$ENVIRONMENT_NAME.tar.gz -C /tmp/$ENVIRONMENT_NAME
+source /tmp/$ENVIRONMENT_NAME/bin/activate
 bash /tmp/$ENVIRONMENT_NAME/bin/conda-unpack
 
 
