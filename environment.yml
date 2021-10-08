@@ -1,8 +1,7 @@
 name: lcls-inj-tuning
 channels:
   - conda-forge
-  - default
-  - anaconda
+  - defaults
 dependencies:
   - python =3.8.8
   - gcc_linux-64
