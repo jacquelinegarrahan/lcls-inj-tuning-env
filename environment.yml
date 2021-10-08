@@ -16,6 +16,6 @@ dependencies:
   - tensorflow ==2.4.1
   - pyepics
   - pip
-  - pip:
-    - gpflow ==2.1.4
-    - scipy ==1.5.4
+  #- pip:
+  #  - gpflow ==2.1.4
+  #  - scipy ==1.5.4
