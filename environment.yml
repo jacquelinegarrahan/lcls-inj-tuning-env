@@ -102,7 +102,7 @@ dependencies:
   - pip
   - x264
   - pyglet
-- lz4-c
+  - lz4-c
   - ptyprocess
   - pyqtgraph
   - tensorflow-estimator
