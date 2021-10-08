@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - default
 dependencies:
-  - python =3.8.8
+  - python =3.8
   - gcc_linux-64
   - binutils_impl_linux-64
   - gxx_impl_linux-64
