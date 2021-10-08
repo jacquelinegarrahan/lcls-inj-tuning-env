@@ -231,6 +231,7 @@ dependencies:
   - lxml
   - conda-pack
   - cothread
+  - pytest
   - pip:
     - git+git://github.com/slaclab/edmbutton
     - matlab-wrapper
