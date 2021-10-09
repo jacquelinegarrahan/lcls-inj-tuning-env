@@ -3,13 +3,9 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - libclang
-  - libcblas
   - libxcb
   - gmp
-  - glib
   - libgcc-ng
-  - cryptography
   - gpy
   - libstdcxx-ng
   - tensorflow
@@ -23,7 +19,6 @@ dependencies:
   - scikit-learn
   - pytest
   - six
-  - libblas
   - openh264
   - zlib
   - threadpoolctl
