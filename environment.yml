@@ -43,3 +43,9 @@ dependencies:
   - intel-openmp
   - scikit-learn
   - pytest
+  - six
+  - libblas
+  - openh264
+  - zlib
+  - threadpoolctl
+
