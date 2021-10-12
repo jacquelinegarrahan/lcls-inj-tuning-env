@@ -8,6 +8,7 @@ dependencies:
   #keep
   - gnutls
   #keep
+  - mkl
   - intel-openmp
   - threadpoolctl
   - scikit-learn
