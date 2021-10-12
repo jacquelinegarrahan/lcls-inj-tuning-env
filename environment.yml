@@ -9,9 +9,7 @@ dependencies:
   - gnutls
   # keep
   - mkl
-  - libgomp
   #keep
-  - xz
   - intel-openmp
   #keep
   - six
