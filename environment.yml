@@ -6,10 +6,7 @@ dependencies:
   - tensorflow
   - python==3.8.8
   #keep
-  - gnutls
-  #keep
   - mkl
-  - intel-openmp
   - threadpoolctl
   - scikit-learn
   - pytest
