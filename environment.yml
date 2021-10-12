@@ -12,10 +12,6 @@ dependencies:
   #keep
   - intel-openmp
   #keep
-  - six
-  #keep 
-  - openh264
-  #keep
   - zlib
   - threadpoolctl
   - scikit-learn
