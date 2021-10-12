@@ -7,13 +7,22 @@ dependencies:
   - gmp
   - libgcc-ng
   - gpy
-  - libstdcxx-ng
   - tensorflow
   - python==3.8.8
-  - pthread-stubs
+  #keep
+  - gnutls
+  # keep
+  - mkl
   - libgomp
+  #keep
+  - xz
   - intel-openmp
   - scikit-learn
   - pytest
+  #keep
+  - six
+  #keep 
+  - openh264
+  #keep
+  - zlib
   - threadpoolctl
-
