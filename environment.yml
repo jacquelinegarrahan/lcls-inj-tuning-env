@@ -7,12 +7,8 @@ dependencies:
   - python==3.8.8
   #keep
   - gnutls
-  # keep
-  - mkl
   #keep
   - intel-openmp
-  #keep
-  - zlib
   - threadpoolctl
   - scikit-learn
   - pytest
