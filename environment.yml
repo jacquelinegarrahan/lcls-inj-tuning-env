@@ -10,16 +10,10 @@ dependencies:
   - libstdcxx-ng
   - tensorflow
   - python==3.8.8
-  - gnutls
-  - mkl
   - pthread-stubs
   - libgomp
-  - xz
   - intel-openmp
   - scikit-learn
   - pytest
-  - six
-  - openh264
-  - zlib
   - threadpoolctl
 
