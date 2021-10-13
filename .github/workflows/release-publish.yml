@@ -4,7 +4,7 @@ name: Create conda environment with docker lcls-inj-tuning
 jobs:
 
 on:
-  releaste:
+  release:
     types: [created]
 
 jobs:
