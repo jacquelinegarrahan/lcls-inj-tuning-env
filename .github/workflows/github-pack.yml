@@ -1,7 +1,4 @@
-on: push
 name: Create conda environment with docker lcls-inj-tuning
-
-jobs:
 
 on:
   push:
