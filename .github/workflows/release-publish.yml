@@ -1,4 +1,4 @@
-name: Create conda environment with docker lcls-inj-tuning
+name: Publish release
 
 on:
   release:
