@@ -13,7 +13,7 @@ jobs:
     name: Build environment
     steps:
       - name: Build environment
-        uses: jacquelinegarrahan/lcls-rhel6-conda-pack@v0.1
+        uses: jacquelinegarrahan/lcls-rhel6-conda-pack@v0.2
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
