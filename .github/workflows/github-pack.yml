@@ -1,13 +1,13 @@
+on: push
 name: Create conda environment with docker lcls-inj-tuning
+
+jobs:
 
 on:
   push:
     branches:
       - main
-#  release:
-#    types: [published]
-#    branches:
-#      - main
+
 jobs:
   build:
     env:
@@ -15,17 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build environment
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v2
-      - name: Build docker
-        uses: docker-practice/actions-setup-docker@master
-      - name: Pack environment
-        run: |
-            set -x
-            docker run -v $(pwd)/environment.yml:/tmp/environment.yml \
-            -v $(pwd):/tmp/project \
-            -e ENVIRONMENT_NAME=${{ env.ENVIRONMENT_NAME }} --name build-env  -t jgarrahan/conda-pack-centos6:v0.0 /tmp/environment.yml
-            docker cp build-env:/root/${{ env.ENVIRONMENT_NAME }}.tar.gz .
+      - name: Build environment
+        uses: actions/lcls-rhel6-conda-pack@v0.0
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
