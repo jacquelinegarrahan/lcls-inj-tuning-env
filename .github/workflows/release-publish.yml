@@ -12,18 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Build environment
     steps:
-      - name: Checkout project
-        uses: actions/checkout@v2
-      - name: Build docker
-        uses: docker-practice/actions-setup-docker@master
-      - name: Pack environment
-        run: |
-            set -x
-            docker run -v $(pwd)/environment.yml:/tmp/environment.yml \
-            -v $(pwd):/tmp/project \
-            -e ENVIRONMENT_NAME=${{ env.ENVIRONMENT_NAME }} --name build-env  -t jgarrahan/conda-pack-centos6:v0.0 /tmp/environment.yml
-            docker cp build-env:/root/${{ env.ENVIRONMENT_NAME }}.tar.gz .
-      - name: Upload binaries to release
+      - name: Build environment
+        uses: jacquelinegarrahan/lcls-rhel6-conda-pack@v0.2
+      - name: Upload artifact to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}

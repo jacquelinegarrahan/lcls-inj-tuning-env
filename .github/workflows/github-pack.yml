@@ -14,8 +14,3 @@ jobs:
     steps:
       - name: Build environment
         uses: jacquelinegarrahan/lcls-rhel6-conda-pack@v0.2
-      - name: Upload
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ env.ENVIRONMENT_NAME }}.tar.gz
-          path: ${{ env.ENVIRONMENT_NAME }}.tar.gz
