@@ -13,4 +13,4 @@ jobs:
     name: Build environment
     steps:
       - name: Build environment
-        uses: slaclab/lcls-rhel6-conda-pack@v0.2
+        uses: slaclab/lcls-rhel6-conda-pack@v1.0.1
